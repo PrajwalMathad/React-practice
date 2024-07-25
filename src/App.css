@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+.header {
+  color: #3228f0;
+  font-size: 3em;
+  font-weight: 700;
+  padding: 1rem;
+}
+p {
+  margin: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.toast {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background: rgba(118, 234, 189, 1);
+    color: black;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    animation: fade-slide-in-from-left 0.3s ease-out;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .toast p {
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section {
+    border: 1px solid blue;
+    margin: 1em;
   }
+
+  .section-header {
+    color: #3228f0;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0 1rem;
+  }
+
+  .btn {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background: rgb(137, 249, 249);
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .cart-btn {
+    background: rgb(255, 235, 119);
+  }
+
+  .close-btn {
+    background: rgb(247, 119, 119);
+  }
+
+
+  .error {
+    border: 1px solid red;
+    background: rgb(253, 174, 174);
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .error-text {
+    color: red;
+  }
+
+  .counter {    
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+  }
+
+  .user {    
+    margin: 0 1rem;
+    font-size: 1.5em;
+    color: green;
+  }
+
+  .post {
+    border-bottom: 1px solid #128659;
+  }
+
+  .post h3 {
+    margin: 1em;
+    color: #128659;
+  }
+  
+#modal {
+  width: 40%;
+  background: #ebfdfb;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fade-slide-in-from-top 0.3s ease-in-out;
+}
+
+#modal::backdrop {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+#modal h2 {
+  font-size: 1.5rem;
+  color: #121486;
+  margin: 0;
 }
