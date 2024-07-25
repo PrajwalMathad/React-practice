@@ -1,0 +1,23 @@
+.places {
+    margin: 1em;
+}
+
+.available-places {
+    border: 1px solid blue;
+    padding: 1em;
+}
+
+.placeBtn {
+    background: rgb(137, 249, 249);
+    padding: 0.5em;
+    border: 1px solid rgb(20, 30, 69);
+    margin: 0.5em;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+.selectedPlaceBtn {
+    background: rgb(174, 137, 249);
+}
